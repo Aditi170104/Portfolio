@@ -1,0 +1,95 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #141414;
+    color: #fff;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 40px;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+}
+
+.logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #e50914;
+}
+.logo span {
+    color: white;
+}
+
+nav a {
+    margin-left: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+nav a:hover {
+    color: #e50914;
+}
+
+.hero {
+    text-align: center;
+    padding: 80px 20px;
+    background: url('banner.jpg') no-repeat center center/cover;
+}
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+.hero p {
+    font-size: 1.2em;
+}
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    background: #e50914;
+    padding: 10px 20px;
+    text-decoration: none;
+    color: white;
+    border-radius: 4px;
+}
+.btn:hover {
+    background: #f40612;
+}
+
+.projects {
+    padding: 40px;
+}
+.projects h2 {
+    margin-bottom: 20px;
+}
+.row {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    padding-bottom: 10px;
+}
+.card {
+    min-width: 250px;
+    background: #222;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.card img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.card p {
+    padding: 10px;
+}
+
+.about, .contact {
+    padding: 40px;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+}
