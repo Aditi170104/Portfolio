@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Who’s Watching?</title>
+  <link rel="stylesheet" href="style.css"/>
+  <style>
+    /* Profiles Grid */
+    .profiles-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(90px, 1fr));
+      gap: 10px;
+      justify-content: center;
+      margin: 30px auto 20px;
+      max-width: 280px;
+    }
+
+    /* Individual Profile Tile */
+    .profile-tile {
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 6px;
+      transition: transform 0.2s ease;
+    }
+
+    .profile-tile:hover {
+      transform: scale(1.05);
+    }
+
+    /* Avatar styling */
+    .avatar-img {
+      width: 120px;
+      height: 120px;
+      border-radius: 12px;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #2b2b2b, #1a1a1a);
+    }
+
+    .avatar-img img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* keeps aspect ratio */
+    }
+
+    /* Name under avatar */
+    .profile-tile p {
+      margin: 0;
+      font-size: 0.9rem;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    /* Responsive */
+    @media (max-width: 500px) {
+      .avatar-img {
+        width: 96px;
+        height: 96px;
+      }
+    }
+  </style>
+</head>
+<body class="profiles-body">
+  <div class="profiles-wrap">
+    <h2>Who’s watching?</h2>
+
+    <div class="profiles-grid">
+      <!-- Recruiter profile -->
+      <a class="profile-tile" href="home.html" aria-label="Recruiter">
+        <div class="avatar-img">
+          <img src="recruiter.jpeg" alt="Recruiter Profile"/>
+        </div>
+        <p>Recruiter</p>
+      </a>
+
+      <!-- Stalker profile -->
+      <a class="profile-tile" href="home.html" aria-label="Stalker">
+        <div class="avatar-img">
+          <img src="stalker.jpg" alt="Stalker Profile"/>
+        </div>
+        <p>Stalker</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

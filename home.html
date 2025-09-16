@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aditi's Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-body">
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">ADITI</div>
+    <nav>
+      <a href="#projects">Projects</a>
+      <a href="https://linkedin.com/in/aditisaxena17" target="_blank">LinkedIn</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <video class="hero-video" autoplay muted playsinline loop>
+      <source src="your-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+
+    <div class="hero-content">
+      <h1>Hello, I’m <span>Aditi</span></h1>
+      <p>I was born and raised in Bareilly, Uttar Pradesh, where curiosity and resilience have shaped my journey. I’m currently pursuing a B.Tech in Computer Science and Engineering with a specialization in Data Science at Bennett University, Greater Noida.
+
+Outside academics, I’m passionate about fitness, football, and volleyball, and I strive to bring the same energy and discipline into everything I do.
+
+Looking ahead, I dream of traveling the world — and one day, taking my cats Leo and Coco along with me on every adventure.</p>
+      <div class="buttons">
+        <a href="Aditi%20Saxena%20Resume.pdf" class="btn resume">
+          Resume
+        </a>
+        <a href="#about" class="btn ghost">More Info</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section id="projects" class="row-section">
+    <h2>Projects</h2>
+    <div class="row">
+      <a class="project-card" href="https://github.com/Aditi170104/Vision-Verify" target="_blank" rel="noopener noreferrer" aria-label="Open Vision Verify on GitHub">
+        <div class="project-thumb">
+          <img src="Vision%20Verify.jpeg" alt="Vision Verify project thumbnail" />
+          <div class="project-overlay"><span>Vision Verify</span></div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/Aditi170104/Parallel-Pharmacy" target="_blank" rel="noopener noreferrer" aria-label="Open Parallel Pharmacy on GitHub">
+        <div class="project-thumb">
+          <img src="Parallel%20Pharmacy.jpeg" alt="Parallel Pharmacy project thumbnail" />
+          <div class="project-overlay"><span>Parallel Pharmacy</span></div>
+        </div>
+      </a>
+
+      <a class="project-card" href="https://github.com/Aditi170104/Hangman" target="_blank" rel="noopener noreferrer" aria-label="Open Hangman on GitHub">
+        <div class="project-thumb">
+          <img src="Hangman.jpeg" alt="Hangman project thumbnail" />
+          <div class="project-overlay"><span>Hangman</span></div>
+        </div>
+      </a>
+    </div>
+  </section>
+
+  <!-- CERTIFICATES SECTION -->
+  <section id="certificates" class="certs-section">
+    <h2>Certificates</h2>
+    
+    <div id="certs-grid" class="certs-grid"><!-- populated by script.js --></div>
+  </section>
+
+  <!-- LIGHTBOX MODAL FOR CERTIFICATES -->
+  <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog">
+    <div class="lightbox-backdrop"></div>
+    <div class="lightbox-content" role="document">
+      <button class="lightbox-close" aria-label="Close">×</button>
+      <img class="lightbox-image" alt="Certificate" />
+      <iframe class="lightbox-pdf" title="Certificate PDF" style="display:none;" loading="lazy"></iframe>
+      <div class="lightbox-caption"></div>
+      <a class="lightbox-open" href="#" target="_blank" rel="noopener noreferrer" style="display:none;">Open</a>
+      <button class="lightbox-prev" aria-label="Previous">‹</button>
+      <button class="lightbox-next" aria-label="Next">›</button>
+    </div>
+  </div>
+
+  <!-- CONTACT FOOTER -->
+  
+
+</body>
+<script src="script.js"></script>
+</html>
